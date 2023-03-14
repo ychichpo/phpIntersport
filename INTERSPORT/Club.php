@@ -16,33 +16,23 @@ class Club
     }
 
 
-    public function setIdClub(int $idClub) {
-        $this->idClub = $idClub;
-    }
 
     public function getIdClub(): int {
         return $this->idClub;
     }
 
-    public function setNomClub(string $nomClub) {
-        $this->nomClub = $nomClub;
-    }
+
 
     public function getNomClub(): string {
         return $this->nomClub;
     }
 
-    public function setNbPoints(int $nbPoints) {
-        $this->nbPoints = $nbPoints;
-    }
 
     public function getNbPoints(): int {
         return $this->nbPoints;
     }
 
-    public function setLesSports(array $lesSports) {
-        $this->lesSports = $lesSports;
-    }
+
 
     public function getLesSports(): array {
         return $this->lesSports;

@@ -3,18 +3,30 @@
 include "Club.php";
 include "ISport.php";
 include "Sport.php";
+include "IspBallon.php";
 include "spBallon.php";
+include "ISpRelais.php";
 include "spRelais.php";
 include "Data.php";
 
 
-$sportCollectif = new spRelais("Hadball",2,200);
-$football = new spBallon("Foot",11,50,100);
 
-echo "Le " . $sportCollectif->getNomSport() . " se joue avec " . $sportCollectif->getNbJoueurs() . " joueurs.";
-echo "Le terrain de football mesure " . $football->getLongueur() . " mètres de long et " . $football->getLargeur() . " mètres de large.
-     Les joueurs doivent parcourir " . $football->getDistance() . " kilomètres pendant un match.";
+foreach($club as $item) {
+    echo $item->getNomClub()."<br/><br/>";
+    $tabSport = $item->getLesSports();
+    foreach ($tabSport as $details) {
+        echo $details->getNomSport()."<br/>";
+        echo $details->getNbJoueurs()."<br/>";
+        if($details instanceof IspBallon) {
+            echo $details->getLargeur()."<br/>";
+            echo $details->getLongueur()."<br/>";
+        }
+        if($details instanceof ISpRelais) {
+            echo $details->getDistance()."<br/>";
+        }
+        echo "<br/>";
 
 
-
+    }
+}
 
