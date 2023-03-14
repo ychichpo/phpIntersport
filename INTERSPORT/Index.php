@@ -1,7 +1,6 @@
 <?php
 
 include "Club.php";
-include "ISport.php";
 include "Sport.php";
 include "IspBallon.php";
 include "spBallon.php";

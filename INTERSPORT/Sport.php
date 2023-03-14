@@ -1,6 +1,6 @@
 <?php
 
-class Sport implements ISport
+class Sport
 {
 
     public $nomSport;

@@ -1,6 +1,6 @@
 <?php
 
-class spRelais extends Sport implements ISport, ISpRelais
+class spRelais extends Sport implements ISpRelais
 {
 
     private $distance;

@@ -1,6 +1,6 @@
 <?php
 
-class spBallon extends Sport implements ISport,IspBallon
+class spBallon extends Sport implements IspBallon
 {
     private $largeur;
     private $longueur;
