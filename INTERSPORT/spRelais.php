@@ -2,17 +2,14 @@
 
 class spRelais extends Sport
 {
-    private int $distance;
+    private  $distance;
 
-    public function __construct(string $nomSport, int $nbJoueurs,int $distance)
+    public function __construct( $nomSport,  $nbJoueurs, $distance)
     {
         parent::__construct($nomSport, $nbJoueurs);
         $this->distance = $distance;
     }
 
 
-    public function getDistance(): int
-    {
-        return $this->distance;
-    }
+
 }

@@ -3,16 +3,14 @@
 interface ISport
 {
 
-    public function getNomSport(): string;
+    public function getNomSport();
 
+    public function getNbJoueurs();
 
-    public function getNbJoueurs(): int;
+    public function getLargeur() ;
 
+    public function getLongueur();
 
-    public function getLargeur(): int ;
-
-    public function getLongueur(): int ;
-
-    public function getDistance(): int;
+    public function getDistance();
 
 }

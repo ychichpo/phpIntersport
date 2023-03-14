@@ -20,11 +20,5 @@ $club["club 2"]->ajouterSport($boxe);
 
 
 
-// Instanciation de la classe SportCollectif
-$sportCollectif = new spRelais("Hadball",2,200);
-
-
-// Instanciation de la classe Football
-$football = new spBallon("Foot",11,50,100);
 
 
