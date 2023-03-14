@@ -2,31 +2,36 @@
 
 class Sport implements ISport
 {
-    private $nomSport;
-    private $nbJoueurs;
+    private string $nomSport;
+    private int $nbJoueurs;
+    protected int $distance;
+    protected int $longueur;
+    protected int $largeur;
 
-
-    public function __construct($nomSport, $nbJoueurs)
+    public function __construct(string $nomSport, int $nbJoueurs)
     {
         $this->nomSport = $nomSport;
         $this->nbJoueurs = $nbJoueurs;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getNomSport()
+
+    public function getNomSport(): string
     {
         return $this->nomSport;
     }
-
-    /**
-     * @return mixed
-     */
-    public function getNbJoueurs()
+    public function getNbJoueurs(): int
     {
         return $this->nbJoueurs;
     }
 
 
+    public function getInfoSpRelais($distance)
+    {
+        $this->distance = $distance;
+    }
+    public function getInfoSpBallon($longueur, $largeur,)
+    {
+        $this->longueur = $longueur;
+        $this->largeur = $largeur;
+    }
 }

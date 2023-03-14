@@ -2,14 +2,11 @@
 
 class spRelais extends Sport
 {
-    private  $distance;
 
-    public function __construct( $nomSport,  $nbJoueurs, $distance)
+    public function getInfoSpRelais()
     {
-        parent::__construct($nomSport, $nbJoueurs);
-        $this->distance = $distance;
+        return $this->distance;
     }
-
 
 
 }
